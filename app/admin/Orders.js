@@ -25,22 +25,7 @@ const Orders = () => {
     }
   };
 
-  // const confirmOrder = async (orderId) => {
-  //   try {
-  //     const orderRef = doc(db, 'orders', orderId);
-  //     await updateDoc(orderRef, {
-  //       confirm: 'yes'
-  //     });
-  //     console.log('Order confirmed successfully');
-  //     setOrders(prevOrders => 
-  //       prevOrders.map(order => 
-  //         order.id === orderId ? { ...order, confirm: 'yes' } : order
-  //       )
-  //     );
-  //   } catch (error) {
-  //     console.error('Error confirming order: ', error);
-  //   }
-  // };
+  
   const confirmOrder = async (orderId) => {
     try {
       const orderRef = doc(db, 'orders', orderId);
