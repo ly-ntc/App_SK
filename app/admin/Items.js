@@ -37,7 +37,7 @@ const Items = () => {
   const deleteItem = async (docId) => {
     try {
       await deleteDoc(doc(db, "products", docId));
-      getItems(); // Lấy lại danh sách sau khi xóa
+      getItems(); 
     } catch (error) {
       console.error("Error deleting item: ", error);
     }
