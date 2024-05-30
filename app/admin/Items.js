@@ -28,7 +28,7 @@ const Items = () => {
         itemsList.push({ ...data, id: doc.id });
       });
       setItems(itemsList);
-      console.log(itemsList); // Đảm bảo rằng bạn đã lấy được dữ liệu đúng
+      console.log(itemsList); 
     } catch (error) {
       console.error("Error fetching items: ", error);
     }
