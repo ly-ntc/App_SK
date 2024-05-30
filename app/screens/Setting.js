@@ -16,8 +16,6 @@ import { collection, getDoc, getDocs , doc,onSnapshot} from 'firebase/firestore'
 import { signOut } from 'firebase/auth';
 
 
-// import Payment from './Payment';
-// import Goods from './Goods';
 
 const Setting = () => {
     const navigation = useNavigation();

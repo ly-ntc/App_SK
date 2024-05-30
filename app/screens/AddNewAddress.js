@@ -4,7 +4,7 @@ import { useIsFocused } from '@react-navigation/native';
 import uuid from 'react-native-uuid';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { doc, getDoc, updateDoc, arrayUnion } from 'firebase/firestore';
-import { db , auth} from "../firebase";  // Ensure the firebase config is correct
+import { db , auth} from "../firebase"; 
 import { useNavigation } from 'expo-router';
 import { AntDesign } from '@expo/vector-icons';
 

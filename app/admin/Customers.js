@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, FlatList, Image } from 'react-native';
 import React, { useEffect, useState } from 'react';
-import { db } from "../firebase"; // Import Firestore from your firebase setup
+import { db } from "../firebase"; 
 import { collection, getDocs } from 'firebase/firestore';
 
 const Customers = () => {

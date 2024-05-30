@@ -52,8 +52,7 @@ const DressItem = ({ item }) => {
     await updateDoc(userRef, {
       cart: tempCart
     });
-    console.log("Đã thêm sản phẩm vào giỏ hàng.");
-    // Cập nhật số lượng sản phẩm trong giỏ hàng
+    // console.log("Đã thêm sản phẩm vào giỏ hàng.");
     getCartItems(); 
   
 

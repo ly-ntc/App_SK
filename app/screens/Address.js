@@ -64,7 +64,6 @@ const Address = () => {
                             <View>
                                 <Text>{'Street: ' + item.street}</Text>
                                 <Text>{'City: ' + item.city}</Text>
-                                {/* <Text>{'Pincode: ' + item.pincode}</Text> */}
                                 <Text>{'Mobile: ' + item.mobile}</Text>
                             </View>
                             {item.selected == true ? (

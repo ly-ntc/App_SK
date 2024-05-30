@@ -35,7 +35,6 @@ const BeingTransported = () => {
 
         const updatedOrders = userData.orders.map(order =>
             order.createdAt === orderKey ? { ...order, finish: 'yes' } : order
-            // console.log(order.createdAt)
         );
         await updateDoc(userRef, {
             orders: updatedOrders
@@ -60,7 +59,6 @@ const BeingTransported = () => {
             >
 
                 <AntDesign onPress={() => navigation.navigate("Setting")} name="left" size={24} color="black" />
-                {/* <Text>Your Bucket</Text> */}
             </View>
             <FlatList
                 data={orderList}

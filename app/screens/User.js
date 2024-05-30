@@ -59,7 +59,7 @@ const User = () => {
             }
         });
 
-        return () => unsubscribe(); // Hủy lắng nghe khi component bị unmount
+        return () => unsubscribe(); 
     }, []);
     console.log("user", user);
     return (

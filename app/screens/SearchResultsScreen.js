@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
     header: {
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'space-between', // Đảm bảo giỏ hàng ở phía bên phải
+        justifyContent: 'space-between', 
         padding: 10,
         width: '100%',
     },

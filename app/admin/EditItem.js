@@ -77,28 +77,6 @@ const EditItem = ({ navigation }) => {
         }
     };
 
-    // const uploadItem = async () => {
-    //     let imageUri = imageUrl;
-    //     if (imageUrl !== route.params.data.image) {
-    //         const response = await fetch(imageUrl);
-    //         const blob = await response.blob();
-    //         const storageRef = ref(storage, `products/${Date.now()}.jpg`);
-    //         await uploadBytes(storageRef, blob);
-    //         imageUri = await getDownloadURL(storageRef);
-    //     }
-
-    //     const productsRef = doc(db, 'products', itemId);
-    //     await updateDoc(productsRef, {
-    //         name,
-    //         price: parseFloat(price),
-    //         discountPrice: parseFloat(discountPrice),
-    //         description,
-    //         image: imageUri,
-    //         category,
-    //     });
-
-    //     navigation.goBack();
-    // };
 
     const uploadItem = async () => {
         if (imageUrl === route.params.data.image) {
@@ -106,7 +84,7 @@ const EditItem = ({ navigation }) => {
             await updateDoc(productsRef, {
                 name: name,
                 price: parseFloat(price),
-                discountPrice: parseFloat(discountPrice), // Chuyển đổi giá thành số
+                discountPrice: parseFloat(discountPrice), 
                 description: description,
                 category: category,
             }).then(()=>{
@@ -134,8 +112,6 @@ const EditItem = ({ navigation }) => {
                         category: category,
                         discountPrice: parseFloat(discountPrice), 
                     });
-
-                    // console.log("Sửa sản phẩm thành công");
 
                 }).then(() => {
                     console.log("Sửa sản phẩm thành công");
@@ -179,7 +155,7 @@ const EditItem = ({ navigation }) => {
                 <ModalSelector
                     data={categoryList}
                     initValue={category}
-                    labelKey="name"  // Sử dụng giá trị category từ state
+                    labelKey="name"  
                     onChange={(option) => setCategory(option.label)}
                     style={styles.dropDown}
                    

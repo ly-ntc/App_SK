@@ -20,19 +20,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const navigation = useNavigation();
 
-  // useEffect(() => {
-  //   setLoading(true);
-  //   const unsubscribe = auth.onAuthStateChanged((authUser) => {
-  //     if (!authUser) {
-  //       setLoading(false);
-  //     }
-  //     if (authUser) {
-  //       // navigation.replace("MyTab");
-  //     }
-  //   });
-
-  //   return unsubscribe;
-  // }, [])
+  
   useEffect(() => {
     setLoading(true);
     const unsubscribe = auth.onAuthStateChanged(async (authUser) => {

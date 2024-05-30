@@ -118,7 +118,7 @@ const Add = ({ navigateToItems }) => {
         <ModalSelector
           data={categoryList}
           initValue="Select a category"
-          labelKey="name" // Sử dụng tên của danh mục để hiển thị
+          labelKey="name" 
           onChange={(option) => setSelectedCategory(option.label)}
           style={styles.picker}
         />
