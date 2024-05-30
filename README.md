@@ -17,4 +17,4 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    ```
 
 3. Báo cáo bài tập lớn
-   https://github.com/lycuyt/App_SK/blob/master/B%C3%A1o%20c%C3%A1o%20th%E1%BB%B1c%20t%E1%BA%ADp%20c%C6%A1%20s%E1%BB%9F.pdf
+   https://drive.google.com/file/d/1iimcJ9aErl393e_bkYjHucmnATvSyo8o/view
